@@ -1,0 +1,51 @@
+# ─── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+.npm/
+.yarn/
+
+# ─── Build Outputs ────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+*.js.map
+*.d.ts.map
+
+# ─── TypeScript ───────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Environment & Secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Testing & Coverage ───────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+jest.config.js.map
+
+# ─── Auto-Generated Docs (runtime output, not source) ─────────────────────────
+# Note: swagger.yaml is generated at runtime — do NOT commit it from projects
+# scaffolded via ice-cli. The templates/nestjs-starter/docs/ dir is intentionally
+# kept to document the expected output shape.
+# templates/nestjs-starter/docs/swagger.yaml
+
+# ─── OS & Editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ─── Misc ─────────────────────────────────────────────────────────────────────
+*.pid
+*.seed
